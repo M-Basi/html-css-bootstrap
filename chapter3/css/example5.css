@@ -1,0 +1,51 @@
+/* Διατηρεί το μεγεθος του κουτιου ανεξαρτήτως
+padding */
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    border: 1px solid black;
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: burlywood;
+
+}
+
+
+/* MARGIN */
+.box1 {
+    width: 300px;
+    height: 200px;
+    background-color: beige;
+    border: 1px solid black;
+    text-align: center;
+    /* κατακορυφη στοιχιση - ισα με το height του div */
+    line-height: 200px;
+    /* margin-bottom: 30px;
+    margin-top: 30px;
+    margin-left: 10px; */
+    margin: 30px 0px 30px 0px;
+    /* margin: 30px 20px; */
+    
+}
+
+
+/* PADDING */
+.box2 {
+    width: 300px;
+    height: 200px;
+    background-color: aqua;
+    border: 1px solid black;
+    /* text-align: center; */
+    margin-top: 30px;
+    opacity: 0.5;
+    /* margin-left: 20px; */
+    /* margin:0px 0px 0px 0px */
+    padding-left: 10px;
+    padding-top: 10px;
+    
+    
+}
+

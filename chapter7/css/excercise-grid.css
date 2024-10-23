@@ -1,0 +1,52 @@
+.dashboard {
+    width: 99%;
+    border: 1px solid rgb(65, 207, 218);
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-auto-rows: 80px;
+    gap: 25px;
+    padding: 10px;    
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.sidebar {
+    grid-column: 1 / 3;
+    border: 1px solid black;
+    padding-left: 10px;
+    background-color: lightgray;
+   
+}
+
+.main-content {
+    grid-column: 3 / 13;
+    border: 1px solid black;
+    padding-left: 10px;
+    
+}
+
+.widgets {    
+    background-color: lightgray;
+    grid-column: 1 / 13;
+    display: grid;
+    grid-template-columns: 20% repeat(3, 25%);
+    grid-auto-rows: 60px;    
+    gap: 25px;    
+    padding: 10px 10px;    
+}
+
+
+.widget1, .widget2, .widget3 {
+    background-color: white;
+    line-height: 60px;
+    padding-left: 10px;
+    
+    
+}
+
+
+
+
+
+

@@ -1,0 +1,227 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 99%;
+    margin-left: auto;
+    margin-right: auto;
+    flex-flow: row wrap;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;  
+    flex-flow: row wrap;
+    position: sticky;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+.top-header {
+    border-bottom: 1px solid whitesmoke;
+    display: flex;
+    align-items: center;
+    padding-left: 100px;
+    justify-content: space-around;
+    flex: 1;
+}
+
+.logo {
+    display: flex;    
+    align-items: center;    
+    flex: 0 30%;
+    font-size: 1.2rem;
+    
+}
+
+.topBarInLogoArea {
+    display: block;
+    flex: 0 70%;
+    padding-right: 80px;
+}
+
+.navbar {
+    flex: 1 100%;
+    padding-left: 100px;
+    padding-top: 10px ;
+}
+
+.logo  img {
+    height: 120px;
+    width: auto;
+    padding-right: 20px;
+}
+
+.topBarInLogoArea .InLogo {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    list-style: none;
+}
+
+
+
+.navbar .nav {
+    display: flex;
+    height: 40px;
+    align-items: center;   
+    list-style: none;
+    
+}
+
+.navbar .nav > li > a {
+    display: block;
+    padding: 5px 10px;    
+    text-decoration: none;
+    font-size: 1rem;
+    color: black;
+    font-weight: bold;
+    
+}
+
+.navbar .dropdown {
+    position: relative;
+}
+
+.navbar .dropdown-content > li > a{
+    
+    text-decoration: none;
+    
+}
+
+.navbar .dropdown-content {
+    display: none;
+    position: absolute;
+    top: 30px;
+    left:10px;
+    width: 120px;
+    list-style: none;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding-top: 10px;
+    border-top: 2px solid #00a7d6;
+    
+}
+
+
+.navbar .dropdown-content a {
+    display: block;
+    width: 100%;
+    text-decoration: none;
+    color: black;
+    padding: 10px 10px;
+    font-size: 0.8rem;
+    
+}
+
+.navbar .dropdown:hover > .dropdown-content {
+    display: flex;
+    width: 250px;
+    background-color: whitesmoke;
+    
+}
+
+
+.fa-regular {
+    color: #00a7d6;
+    font-size: 1.8rem;
+    padding-right: 10px;
+    vertical-align: middle;
+    
+}
+
+
+.nav-toggle {
+    display: none;
+    /* padding-right: 40px; */
+    
+    
+
+}
+
+.nav-toggle > button {
+    width: 50px;
+    height: 50px;
+    position:fixed;
+    top: 30px;
+    left: 30px;
+    transition: transform 1s;
+}
+
+
+.nav-toggle > button:hover {
+    transform: scale(1.2);;
+}
+
+.navbar-toggle {
+    display: none;
+    border: 1px solid black;
+    width: 200px;
+    background-color: whitesmoke;
+    
+}
+
+
+.navbar-toggle .nav, .navbar-toggle .dropdown-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* background-color: aquamarine; */
+
+}
+
+.navbar-toggle .logo {
+    justify-content: center;
+    
+}
+
+.navbar-toggle li {
+    width: 100%;
+    list-style: none;
+    text-align: center;
+    
+}
+
+.navbar-toggle a {
+    display: block;
+    padding: 10px 0px;
+    text-decoration: none;
+    color: black;
+    font-size: 1rem;
+}
+
+.navbar-toggle .dropdown-content a {
+    font-size: 1rem;
+   
+}
+
+.show {
+    display: block;    
+}
+
+
+
+
+@media (max-width: 992px) {
+    .nav-toggle {
+        display: block;
+    }
+
+    .navbar {
+        display: none;
+    }
+
+    .topBarInLogoArea {
+        display: none;
+    }
+
+    .top-header{
+        padding-left: 10px;
+        justify-content: center;
+    }
+}

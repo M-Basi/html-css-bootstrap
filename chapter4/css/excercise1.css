@@ -1,0 +1,168 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.body {
+    background-color: #363636;
+}
+
+.header {
+    background-color: #363636;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    min-height: 15vh; 
+    width: 100%; 
+    position: sticky;
+    top: 0;
+    left: 0;
+    
+   
+
+}
+
+.img-log > img {
+    height: 15vh;
+    width: auto;
+    
+}
+
+
+.img-log {
+    flex: 1;
+    
+}
+
+.nav {
+    flex: 1;
+    
+
+}
+
+.nav > ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+    flex-wrap: wrap;
+    margin-right: 40px;
+}
+
+.nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    padding: 5px 10px ;
+}
+
+
+.img-back {    
+    min-height: 84vh;
+    background-image: url('../img/tep-aueb.jpg');    
+    background-repeat: no-repeat; 
+    background-size: cover;
+    background-position: center;    
+    display: flex;
+    justify-content: space-between;    
+    align-items: center;
+    flex-direction: column; 
+    padding-bottom: 40px;
+    background-color: #363636;
+
+    /* position: relative;
+    top:17vh; */
+        
+}
+
+.text-bolt, .bottom-text {
+    flex:1;
+}
+
+.text-bolt {
+    width: 35%;
+    border: 1px solid black;
+    color: white;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 2.5rem;
+    font-weight: 500;
+    font-stretch: ultra-expanded;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;  
+    vertical-align: bottom;
+    /* margin-bottom: 60px; */
+    /* padding-top: 15%; */
+ 
+   
+   
+     
+
+}
+
+.bottom-text {
+    /* border: 1px solid black; */
+    width: 30%;
+    text-align: center;
+    font-size: 1.6rem;
+    color: white;
+    
+    
+}
+
+.main {
+    padding: 30px;
+    
+}
+
+.main-text  {
+    margin-top: 30px;
+    text-align: justify;
+    opacity: 0.7;
+    line-height: 2;
+    
+    
+    
+}
+
+.footer {
+    
+    padding: 30px;
+    background-color: #363636;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;  
+    
+}
+
+
+.foot-text{
+    color: white;
+    font-size: 0.9rem;
+    /* border: 1px solid black; */
+}
+
+.social-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.social {
+    margin: 0 10px;
+    
+}
+
+.fa-brands {
+    padding: 0 5px;
+    font-size: 1.6rem;
+    color: blue;
+}
+
+
+.follow {
+    text-align: center;
+}
+
+

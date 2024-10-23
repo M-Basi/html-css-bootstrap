@@ -1,0 +1,23 @@
+/* Προσαρμογή στην οθόνη */
+
+
+/* Κρυβει τα κενα από την ακρα της σελίδας */
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.header {
+    height: 200px;
+    border: 1px solid black;
+    background-color: aqua;
+}
+
+
+
+.aueb-img > img {
+    /* Πιανει το υπόλοιπο του υψους της οθόνης */
+    height: calc(95vh - 200px);
+    width: 100%;   /* 100vw */  
+       
+}

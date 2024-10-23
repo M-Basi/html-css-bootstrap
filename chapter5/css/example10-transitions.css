@@ -1,0 +1,84 @@
+.box1{
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    transition: width 2.15s ease-in;
+}
+
+.box1:hover {
+    width: 500px;
+    transition: width 4s steps(6, end);
+}
+
+.box2 {
+    width: 200px;
+    height: 200px;
+    background-color: green;
+    margin-top: 10px;
+    transition: transform 2.15s ease-in;
+}
+
+.box2:hover {
+    transform: scale(3);    /*το μεγαλώνει δηλωμένες φορές*/
+}
+
+.box3 {
+    width: 200px;
+    height: 200px;
+    background-color: blue;
+    margin-top: 10px;
+    transition: transform 2.15s;
+}
+
+.box3:hover {
+    transform: rotate(180deg);   /*το περιστρεφει*/
+}
+
+.box4 {
+    width: 200px;
+    height: 200px;
+    background-color: brown;
+    margin-top: 10px;
+    transition: transform 2.15s;
+}
+
+.box4:hover {
+    transform: translate(20px, -20px);   /*το μετακινει*/
+}
+
+.box5 {
+    width: 200px;
+    height: 200px;
+    background-color: aqua;
+    margin-top: 10px;
+    transition: transform 2.15s;
+
+}
+
+.box5:hover {
+    transform: skewX(-20deg);   /*γερνει πλαγιως το αντικείμενο αναλόγως του αξονα (skewX για Χ αξονα */
+}
+
+.box6 {
+    width: 200px;
+    height: 200px;
+    background-color: yellow;
+    margin-top: 10px;
+    transition: transform 2.15s;
+}
+
+.box6:hover {
+    transform: skewY(30deg);     /*γερνει πλαγιως το αντικείμενο αναλόγως του αξονα (skewΥ για Υ αξονα ΠΡΟς ΤΑ ΚΑΤΩ */
+}
+
+.box7 {
+    width: 200px;
+    height: 200px;
+    background-color: cadetblue;
+    margin-top: 10px;
+    transition: transform 2.15s;
+}
+
+.box7:hover {
+    transform: rotate(90deg) scale(2) translateY(-50px) translateX(50px);   /*Συνδιασμός κινήσεων*/
+}

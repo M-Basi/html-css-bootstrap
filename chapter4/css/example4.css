@@ -1,0 +1,109 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.header {
+    background-color: #762124;
+    overflow: hidden;
+}
+
+.logo {
+    float: left;
+}
+
+.logo > img {
+    height: 100px;
+    width: auto;
+}
+
+.nav {
+    float: left;
+    width: 500px;
+    /* background-color: aqua; */
+}
+
+.nav > ul {
+    height: 100px;
+    list-style: none;   /*βγαζει τις τελειες*/
+    display: flex;    /*τα βαζει σε σειρα*/
+    justify-content: space-around;
+    align-items: center;    /*κεντριζει πανω κατω*/
+}
+
+.nav a{
+    color: white;
+    text-decoration: none;    /*βγαζει την κατω γραμμή από τα links*/
+    font-size: 1.2rem;
+    padding: 15px 10px;   /* μεγαλ.ωνει το πλαισιο τον link για να πατιουνται καλυτερα*/
+}
+
+.nav a:hover {
+    background-color: rgb(22,152,109);
+}
+
+.nav a:active {
+    background-color: rgb(172,172,231);
+}
+
+
+.home-img {
+    background-color: aqua;
+    background-image: url('../img/tep-aueb.jpg');
+    width: 100%;
+    height: 400px;
+    background-repeat: no-repeat;    /*μικρότερη εικόνα από το πλαίσιο δεν την επαναλαμβάνει*/
+    background-size: cover;   /*καλύπτει όλο το πλα΄σιο αν η εικόνα είναι μικρότερη*/
+    background-position: center;   /*κεντριζει την εικόνα*/
+    /* opacity: 0.5; */
+
+    /*χρήση flex*/
+    display: flex;
+    justify-content: center;   /*κεντριζει αριστερα δεξια*/
+
+    align-items: center;    /*κεντριζει πανω κατω*/
+}
+
+.home-title {
+    width: 50%;
+    color: #762124;
+    font-size: 40px;
+    font-weight: 600;
+    /* opacity: 1; */
+}
+
+.gap-bottom {
+    margin-bottom: 25px;
+}
+
+.main-title {
+    text-align: center;
+
+}
+
+.footer {  
+    height: 120px;
+    background-color: #762124;
+    color: white;
+
+    /*ΧΡΗΣΗΣ FLEX*/
+    display: flex;
+    justify-content: space-between;   /*paei to ένα δεξια , το αλλο αριστερα*/
+
+    align-items: center;
+
+    padding: 0 10px;
+}
+
+
+
+
+
+

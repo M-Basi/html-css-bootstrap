@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/excercise.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="top-header">
+                <div class="nav-toggle">
+                    <button type="button">&#8801;</button>
+                </div>
+                <div class="logo">
+                    <a href=""><img src="./img/medical-logo-10.png" alt="MEDICAL SYMBOL"></a>
+                    <pre>xxxxxxxxxxxxxxxxx</pre>
+                </div>
+                <div class="topBarInLogoArea">
+                    <ul class="InLogo">
+                        <li> <i class="fa-regular fa-clock"></i> Δευτ-Παρ 09:00-21:00, Σάβ 10:00-14:00</li>
+                        <li> <i class="fa-light fa-mobile-screen"></i> 69XXXXXXXX</li>
+                        <li> <i class="fa-thin fa-address-book"></i> Address </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="navbar">
+                <ul class="nav">
+                    <li class="dropdown">
+                        <a href="javascript:void(0)">ΓΙΑΤΡΟΣ</a>
+                        <ul class="dropdown-content">
+                            <li><a href=""> <i class="fa-solid fa-angle-right"></i>  Βιογραφικό</a></li>
+                            <li><a href=""> <i class="fa-solid fa-angle-right"></i> Το Ιατρείο</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="javascript:void(0)">ΥΠΗΡΕΣΙΕΣ</a>
+                        <ul class="dropdown-content">
+                            <li><a href=""> <i class="fa-solid fa-angle-right"></i> Ενήλικες</a></li>
+                            <li><a href=""> <i class="fa-solid fa-angle-right"></i> Παιδιά</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="javascript:void(0)">ΠΑΘΗΣΕΙΣ</a>
+                        <ul class="dropdown-content">
+                            <li><a href=""> <i class="fa-solid fa-angle-right"></i> Παθηση 1</a></li>
+                            <li><a href=""> <i class="fa-solid fa-angle-right"></i> Πάθηση 2</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="">ΦΩΤΟΓΡΑΦΙΕΣ</a></li>
+                    <li><a href="">ΕΠΙΚΟΙΝΩΝΙΑ</a></li>
+                </ul>
+            </div>
+            
+        </div>
+
+        <div class="navbar-toggle" >
+            <div class="logo">
+                <a href=""><img src="./img/medical-logo-10.png" alt="MEDICAL SYMBOL"></a>
+                
+            </div>
+            <ul class="nav">
+                <li class="dropdown">
+                    <a href="javascript:void(0)">ΓΙΑΤΡΟΣ</a>
+                    <ul class="dropdown-content">
+                        <li><a href=""> <i class="fa-solid fa-angle-right"></i>  Βιογραφικό</a></li>
+                        <li><a href=""> <i class="fa-solid fa-angle-right"></i> Το Ιατρείο</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="javascript:void(0)">ΥΠΗΡΕΣΙΕΣ</a>
+                    <ul class="dropdown-content">
+                        <li><a href=""> <i class="fa-solid fa-angle-right"></i> Ενήλικες</a></li>
+                        <li><a href=""> <i class="fa-solid fa-angle-right"></i> Παιδιά</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="javascript:void(0)">ΠΑΘΗΣΕΙΣ</a>
+                    <ul class="dropdown-content">
+                        <li><a href=""> <i class="fa-solid fa-angle-right"></i> Παθηση 1</a></li>
+                        <li><a href=""> <i class="fa-solid fa-angle-right"></i> Πάθηση 2</a></li>
+                    </ul>
+                </li>
+                <li><a href="">ΦΩΤΟΓΡΑΦΙΕΣ</a></li>
+                <li><a href="">ΕΠΙΚΟΙΝΩΝΙΑ</a></li>
+            </ul>
+        </div>
+
+
+
+    </div>
+
+
+
+
+    <script>
+        /*Δήλωση μεταβλητών*/
+        const toggleBtn = document.querySelector('.nav-toggle');
+        const navBarToggle = document.querySelector('.navbar-toggle');
+
+        /*μέθοδοι και functions*/
+        toggleBtn.addEventListener('click', function() {
+            console.log("Hello Button")
+            navBarToggle.classList.toggle('show')  /*Εντολή για να φανει το navbar... εφτιαξα κλαση show στο css*/
+        })
+
+
+    </script>
+
+
+
+</body>
+</html>

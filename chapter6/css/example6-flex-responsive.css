@@ -1,0 +1,117 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+/*Styling for first container*/
+.flex-container-1 {
+    display: flex;
+    flex-flow: row wrap;   /*wrap  = αν δεν χωραει στην γραμμη πήγαινε από κατω*/
+    font-weight: bold;
+    text-align: center;
+}
+
+.header {
+    background-color: tomato;
+    flex: 0 100%;
+}
+
+/* flex: flex-grow flex-shrink flex-basis */
+
+.aside-1 {
+    background-color: gold;
+    /* flex: 0 100px; */
+    flex: 1 100px;
+    /* flex: 1 20%; */
+}
+
+.main {
+    background-color: deepskyblue;
+    text-align: center;
+    /* flex: 0 100px; */
+    flex: 3 100px;
+    /* flex: 1 60%; */
+    
+}
+
+.aside-2 {
+    background-color: hotpink;
+    /* flex: 0 100px; */
+    flex: 1 100px;
+    /* flex: 1 20%; */
+}
+
+
+.footer {
+    background-color: lightgreen;
+    flex: 0 100%;
+}
+
+
+
+@media all and (max-width:800px) {
+    .flex-container-1{
+        display: flex;
+        flex-flow: column;
+    }
+    
+
+    .aside-1 {
+        flex: 0 100%;
+    }
+
+    .main {
+        flex: 0 100%;
+    }
+    .aside-2 {
+        flex: 0 100%;
+    }
+}
+
+
+
+/*Styling for 2nd container*/
+
+.flex-container-2 {
+    margin-top: 20px;
+    font-weight: bold;
+    text-align: center;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+
+.aside-3-left {
+    background-color: gold;
+    flex: 0 30%
+}
+
+.aside-3-right {
+    flex: 0 70%;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+
+.aside-3-right .main {
+    flex: 3;
+}
+
+.aside-3-right .aside-4 {
+    flex: 1;
+    background-color: aqua;
+}
+
+.aside-3-right .footer {
+    flex: 0 100%;
+}
+
+
+
+
+
+
+
+    

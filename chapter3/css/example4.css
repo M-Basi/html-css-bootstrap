@@ -1,0 +1,28 @@
+
+/* τα elements με id */
+h2[id], p[id] {
+    background-color: aquamarine;
+}
+
+
+a[href='#']:hover {
+    background-color: blueviolet;
+}
+
+
+/* ολΑ τα στοιχεια που το class ξεκιναει με info */
+*[class^="info"] {
+    background-color: chocolate;
+}
+
+
+/* ολΑ τα στοιχεια που το class περιεχει το text */
+*[class*="text"] {
+    color: red;
+}
+
+
+/* To h2 στοιχεια που το class τελειώνει με title*/
+h2[class$="title"] {
+    font-style: italic;
+}

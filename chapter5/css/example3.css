@@ -1,0 +1,19 @@
+.container {
+    height: 500px;
+    border: 1px solid black;
+    display: flex;
+    flex-wrap: wrap;  /*topouetei τα κουτια απο κατω όταν μικραίνει η οθόνη*/
+    justify-content: space-evenly;
+    align-items: center;
+    
+    
+}
+
+div[class^=box] {
+    width: 100px;
+    height: 100px;
+    background-color: lightblue;
+    border: 1px solid black;
+    margin: 0 5px;
+    border-radius: 50%;
+}

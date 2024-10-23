@@ -1,0 +1,29 @@
+
+.container {
+    height: 500px;
+    border: 1px solid black;
+    display: flex;
+
+    /* ΟΡΙΖΟΝΤΙΑ ΣΤΟΙΧΙΣΗ */
+    /* justify-content: flex-start;   βαζει όλα τα κουτιά αριστερα */
+    /* justify-content: right;    βαζει όλα τα κουτιά δεξια */
+    /* justify-content: center; */
+    /* justify-content: space-around;   //βαζει σε καθε κουτι αριστερα και δεξια τον χωρο που δεν χρησιμοποιείται */
+    /* justify-content: space-between;    βαζει τα ακριανα κουτια τερμα δεξια και αριστερα καιι στα υπόλοιπα οπως το space-around */
+    justify-content: space-evenly; /*τα βαζει σε ισες αποστασεις μεταξυ τους αναλογα με το χωρο που περισσευει*/ 
+
+    /* ΚΑΘΕΤΗ ΣΤΟΙΧΙΣΗ */
+    /* align-items: flex-start;    τερμα πανω στο div */
+    /* align-items: flex-end; τερμα κατω στο div*/
+    /* align-items: center; στο κέντρο*/
+    align-items: stretch;    /*επεκτεινεται σε όλο το div - den πρπει τα παιδιά του div να έχουν δικό τους ύψος*/
+
+    
+}
+
+div[class^=box] {
+    width: 200px;
+    /* height: 200px; */
+    background-color: lightblue;
+    border: 1px solid black;
+}

@@ -1,0 +1,37 @@
+div[class^="grid"] {
+    border: 1px solid red;  
+    /* text-align: center; 
+    line-height: 100px; */
+    
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(3, 100px);
+    
+}
+
+
+/*Τροπος να επεκταθουν τα πλαισια μας*/
+
+/*1οσ τροπος*/
+/* .grid-item-1 {
+    background-color: green;
+    grid-column-start: 1;
+    grid-column-end: 3;
+} */
+
+/*2ος τροπος*/
+/* .grid-item-1 {
+    background-color: green;
+    grid-column-start: 1;
+    grid-column-end: span 2;
+} */
+
+
+/*3ος τροπος*/
+.grid-item-1 {
+    background-color: green;
+    grid-column: 1 / 3;
+}

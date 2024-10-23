@@ -1,0 +1,6 @@
+.container {
+    background-color: aqua;
+    display: flex; /*Βάζει τα elements του div σε μία σειρά*/
+    justify-content: space-around; /*στοιχίζει ολα τα elements στο κεντρο και σε όλο τον διαθεσιμο χωρο*/ 
+    align-items: center; /* βαζει το element στο κεντρο (πανω- κατω) του div*/
+}
